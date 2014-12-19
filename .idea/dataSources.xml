@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3283571074">
+    <data-source source="LOCAL" name="development" uuid="6566bf27-04c1-47b9-a041-e9948c0585a3">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails devapi_app: development" uuid="ea59f5a6-9420-4708-ae0e-2c0386efa05d">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:devapi_db</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails devapi_app: test" uuid="232c0faf-2384-4ec6-9517-0591c7708d6f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:devapi_db</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails devapi_app: production" uuid="0a364ae4-f748-4141-a1f9-b2e997f37594">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:devapi_db</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
