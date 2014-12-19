@@ -11,7 +11,7 @@ the backend.
 
 2). User Sign_In
 
-    curl -H 'Content-Type: application/json' -H 'Accept: application/json' -X POST https://devise-api-app.herokuapp.com/users/sign_in   -d '{"user": {"email": "your_email_id", "password": "your_password"}}'
+    curl -H 'Content-Type: application/json' -H 'Accept: application/json' -X POST https://devise-api-app.herokuapp.com/users/sign_in  -d '{"user": {"email": "your_email_id", "password": "your_password"}}'
 
                                                                   X----------------------------------X
 
@@ -25,14 +25,14 @@ the backend.
 
 4). Creating Users Products
 
-    curl -i -H "Accept: application/json" -H "Content-type: application/json" -H "email:your_email_id" -H "token:your_user_token" -X POST -d '{"product": {"name":"your_product_name","price":your_product_price } }' https://devise-api-app.herokuapp.com/products.json
+    curl -i -H "Accept: application/json" -H "Content-type: application/json" -H "email:your_email_id" -H "token:your_user_token" -X POST -d '{"product": {"name":"your_product_name","price":your_product_price } }' https://devise-api-app.herokuapp.com/api/v1/products.json
 
                                                                   X----------------------------------X
 
 
 5). Listing Users Products
 
-    curl -i -H "Accept: application/json" -H "Content-type: application/json"  -H "email:your_email_id" -H "token:your_user_token" -X GET https://devise-api-app.herokuapp.com/products.json
+    curl -i -H "Accept: application/json" -H "Content-type: application/json"  -H "email:your_email_id" -H "token:your_user_token" -X GET https://devise-api-app.herokuapp.com/api/v1/products.json
 
                                                                   X----------------------------------X
 

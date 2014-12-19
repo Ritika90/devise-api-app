@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  resources :products, except: [:new, :edit]
+  namespace :api do
+    namespace :v1 do
+      resources :products, except: [:new, :edit]
+    end
+  end
   root 'home#index'
-  devise_for :users, :controllers => {:registrations => "my_devise/registrations", :sessions => "my_devise/sessions"}
+  devise_for :users, :controllers => {:registrations => "api/v1/my_devise/registrations", :sessions => "api/v1/my_devise/sessions"}
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
