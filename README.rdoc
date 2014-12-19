@@ -4,34 +4,35 @@ the backend.
 
 1). Creating New User
 
-    curl -X POST -H "Content-type: application/json" -d '{"user":{"email":"your_email_id","password":"your_password","password_confirmation":"your_password"}}' http://localhost:3000/users
+    curl -X POST -H "Content-type: application/json" -d '{"user":{"email":"your_email_id","password":"your_password","password_confirmation":"your_password"}}' https://devise-api-app.herokuapp.com/users
 
-                           X----------------------------------X
+                                                                  X----------------------------------X
 
 
 2). User Sign_In
 
-    curl -H 'Content-Type: application/json' -H 'Accept: application/json' -X POST http://localhost:3000/users/sign_in   -d '{"user": {"email": "your_email_id", "password": "your_password"}}'
+    curl -H 'Content-Type: application/json' -H 'Accept: application/json' -X POST https://devise-api-app.herokuapp.com/users/sign_in   -d '{"user": {"email": "your_email_id", "password": "your_password"}}'
 
-                           X----------------------------------X
+                                                                  X----------------------------------X
 
 
 3). User Sign_Out
 
-    curl -i -H "Accept: application/json" -H "Content-type: application/json"  -H "email:your_email_id" -H "token:your_user_token" -X DELETE http://localhost:3000/users/sign_out
+    curl -i -H "Accept: application/json" -H "Content-type: application/json"  -H "email:your_email_id" -H "token:your_user_token" -X DELETE https://devise-api-app.herokuapp.com/users/sign_out
 
-                           X----------------------------------X
+                                                                  X----------------------------------X
 
 
 4). Creating Users Products
 
-    curl -i -H "Accept: application/json" -H "Content-type: application/json" -H "email:your_email_id" -H "token:your_user_token" -X POST -d '{"product": {"name":"your_product_name","price":your_product_price } }' http://localhost:3000/products.json
+    curl -i -H "Accept: application/json" -H "Content-type: application/json" -H "email:your_email_id" -H "token:your_user_token" -X POST -d '{"product": {"name":"your_product_name","price":your_product_price } }' https://devise-api-app.herokuapp.com/products.json
 
-                           X----------------------------------X
+                                                                  X----------------------------------X
 
 
 5). Listing Users Products
 
-    curl -i -H "Accept: application/json" -H "Content-type: application/json"  -H "email:your_email_id" -H "token:your_user_token" -X GET http://localhost:3000/products.json
+    curl -i -H "Accept: application/json" -H "Content-type: application/json"  -H "email:your_email_id" -H "token:your_user_token" -X GET https://devise-api-app.herokuapp.com/products.json
 
-                           X----------------------------------X
+                                                                  X----------------------------------X
+
