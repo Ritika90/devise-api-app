@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     end
   end
   root 'home#index'
-  devise_for :users, :controllers => {:registrations => "api/v1/my_devise/registrations", :sessions => "api/v1/my_devise/sessions"}
+  devise_for :users, :controllers => {:registrations => "api/v1/my_devise/registrations", :sessions => "api/v1/my_devise/sessions", :confirmations => "api/v1/my_devise/confirmations"}
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

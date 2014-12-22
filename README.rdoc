@@ -23,6 +23,13 @@ the backend.
                                                                   X----------------------------------X
 
 
+3). User Email Confirmation
+
+    curl -X GET -H "Content-type: application/json" -d '{"user":{"email":"your_email_id","password":"your_password"}}' http://link of confirmation token
+
+                                                                   X----------------------------------X
+
+
 4). Creating Users Products
 
     curl -i -H "Accept: application/json" -H "Content-type: application/json" -H "email:your_email_id" -H "token:your_user_token" -X POST -d '{"product": {"name":"your_product_name","price":your_product_price } }' https://devise-api-app.herokuapp.com/api/v1/products.json
