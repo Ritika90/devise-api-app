@@ -8,10 +8,10 @@ class Api::V1::MyDevise::RegistrationsController < Devise::RegistrationsControll
     if resource_saved
       if resource.active_for_authentication?
         sign_up(resource_name, resource)
-         # render :json => {:user => {:email => current_user.email, :authentication_token => resource.authentication_token, :status => "User Created & Signed_In"}}
+         render :json => {:user => {:email => current_user.email, :authentication_token => resource.authentication_token, :status => "User Created & Signed_In"}}
       else
         expire_data_after_sign_in!
-        # render :json => {:user => {:email => current_user.email, :status => false}}
+         render :json => {:user => { :status => "Confirmation message has been sent to your email"}}
       end
     else
       render :json => {:status => false}
